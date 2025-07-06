@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -121,58 +122,84 @@
 
 /* Custom Birthday Animations */
 @keyframes float-1 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(180deg); }
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
 }
 
 @keyframes float-2 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-30px) rotate(-180deg); }
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(-180deg);
+  }
 }
 
 @keyframes float-3 {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-25px) rotate(360deg); }
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(360deg);
+  }
 }
 
 @keyframes float-slow {
-  0%, 100% { 
-    transform: translateY(0px) translateX(0px) rotate(0deg); 
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
     opacity: 0.3;
   }
-  25% { 
-    transform: translateY(-30px) translateX(20px) rotate(90deg); 
+  25% {
+    transform: translateY(-30px) translateX(20px) rotate(90deg);
     opacity: 0.6;
   }
-  50% { 
-    transform: translateY(-60px) translateX(-10px) rotate(180deg); 
+  50% {
+    transform: translateY(-60px) translateX(-10px) rotate(180deg);
     opacity: 0.8;
   }
-  75% { 
-    transform: translateY(-30px) translateX(-20px) rotate(270deg); 
+  75% {
+    transform: translateY(-30px) translateX(-20px) rotate(270deg);
     opacity: 0.6;
   }
 }
 
 @keyframes sparkle {
-  0%, 100% { 
+  0%,
+  100% {
     transform: scale(1) rotate(0deg);
     opacity: 1;
   }
-  50% { 
+  50% {
     transform: scale(1.2) rotate(180deg);
     opacity: 0.7;
   }
 }
 
 @keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 @keyframes rainbow {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .animate-float-1 {
@@ -245,9 +272,15 @@ html {
 }
 
 @keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Confetti button hover effect */
