@@ -1,37 +1,46 @@
-import { useState } from "react";
-import { Heart } from "lucide-react";
 import { motion } from "framer-motion";
+import { Heart } from "lucide-react";
 
 const SpecialMessage = () => {
   return (
     <motion.section
-      initial={{ opacity: 0, x: 50 }}
+      initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8 }}
-      className="bg-white rounded-3xl shadow-2xl p-6 text-center border-2 border-purple-200 h-full"
+      transition={{ duration: 0.6 }}
+      className="bg-white rounded-2xl shadow-lg p-8 text-center border border-gray-100 h-full"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-purple-800 mb-6 font-[Dancing Script]">
-        💖 To My Dearest Burte 💖
+      <h2 className="text-3xl font-bold text-pink-700 mb-4 font-[Great Vibes]">
+        💖 To My Dearest Mar Nat 🎓
       </h2>
-      <div className="text-base md:text-lg text-gray-700 leading-relaxed space-y-4">
-        <p className="text-xl font-semibold text-pink-600">
-          Happy 18th Birthday, My Love! 🎉
+      <div className="text-base text-gray-600 font-[Inter] leading-relaxed space-y-3">
+        <p className="text-lg font-semibold text-pink-600">
+          Congratulations on Your Graduation! 🎉
         </p>
         <p>
-          Burte, today we celebrate you — the most beautiful, kind, and incredible woman I know. Turning 18 is a milestone, and I’m so excited to see you shine as you step into this new chapter. 💫
+          Mar Nat, your journey to this moment has been nothing short of
+          inspiring. Your dedication to Accounting shines as brightly as your
+          beautiful smile. I’m so proud of you! 💫
         </p>
         <p>
-          Your laughter is my favorite song, your smile my favorite view, and your heart my home. You make every moment better, and I’m endlessly grateful for you. 🥰
+          Your hard work and passion have led you here, and I know you’ll
+          conquer every challenge ahead. You’re not just a graduate—you’re my
+          hero. 🥰
         </p>
         <p>
-          May this year bring you all the joy, love, and dreams you deserve. I’ll be by your side, cheering you on, always. Here’s to you, Burte — my love, my star, my everything. 🌹
+          As you step into this new chapter, know that my love and support are
+          always with you. Here’s to your brilliant future, my darling Mar Nat.
+          🌹
         </p>
-        <div className="flex justify-center mt-6">
-          <Heart className="text-red-500 animate-pulse" size={32} fill="currentColor" />
-        </div>
+        <motion.div
+          className="flex justify-center mt-4"
+          animate={{ scale: [1, 1.1, 1] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+        >
+          <Heart size={28} className="text-pink-500" fill="currentColor" />
+        </motion.div>
       </div>
       <style jsx>{`
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400&display=swap");
       `}</style>
     </motion.section>
   );

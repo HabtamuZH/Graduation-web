@@ -1,97 +1,120 @@
-import { Heart, Star, Gift, Sparkles } from 'lucide-react';
+import { Heart, Sparkles } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-r from-purple-800 via-pink-700 to-purple-800 text-white py-12 px-4">
-      <div className="max-w-6xl mx-auto">
+    <footer className="bg-cream-50 py-8 px-4 text-center relative">
+      <div className="max-w-4xl mx-auto">
         {/* Main footer content */}
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* Birthday wishes section */}
-          <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold mb-4 flex items-center justify-center md:justify-start">
-              <Gift className="mr-2" size={24} />
-              Birthday Wishes
+        <div className="grid md:grid-cols-3 gap-6 mb-6">
+          {/* Congratulatory message */}
+          <div>
+            <h3 className="text-2xl font-bold text-pink-700 mb-3 font-[Great Vibes] flex items-center justify-center">
+              <Sparkles className="mr-2 text-gold-400" size={20} />
+              Congratulations, Mar Nat!
             </h3>
-            <p className="text-purple-100 leading-relaxed">
-              May your 18th birthday be the start of a year filled with good luck, 
-              good health, and much happiness. You deserve all the wonderful things 
-              life has to offer! 🌟
+            <p className="text-gray-600 font-[Inter] leading-relaxed">
+              Your Accounting degree is a testament to your brilliance and hard
+              work. Here’s to a future filled with success and joy! 🎓
             </p>
           </div>
 
-          {/* Special message section */}
-          <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4 flex items-center justify-center">
-              <Heart className="mr-2 text-red-400" size={24} fill="currentColor" />
-              You Are Amazing
+          {/* Why Mar Nat Shines */}
+          <div>
+            <h3 className="text-2xl font-bold text-pink-700 mb-3 font-[Great Vibes] flex items-center justify-center">
+              <Heart
+                className="mr-2 text-pink-500"
+                size={20}
+                fill="currentColor"
+              />
+              You Shine Bright
             </h3>
-            <div className="space-y-2 text-purple-100">
-              <p>✨ Beautiful inside and out</p>
-              <p>🌟 Bright future ahead</p>
-              <p>💫 Dreams coming true</p>
-              <p>🎈 Joy and laughter always</p>
+            <div className="text-gray-600 font-[Inter] space-y-1">
+              <p>✨ Inspiring determination</p>
+              <p>🌟 Exceptional talent</p>
+              <p>💖 Heart of gold</p>
+              <p>🎓 Future CPA star</p>
             </div>
           </div>
 
-          {/* Fun facts section */}
-          <div className="text-center md:text-right">
-            <h3 className="text-2xl font-bold mb-4 flex items-center justify-center md:justify-end">
-              <Star className="mr-2 text-yellow-400" size={24} fill="currentColor" />
-              Fun Facts
+          {/* Fun Graduation Facts */}
+          <div>
+            <h3 className="text-2xl font-bold text-pink-700 mb-3 font-[Great Vibes] flex items-center justify-center">
+              <Sparkles className="mr-2 text-gold-400" size={20} />
+              Graduation Highlights
             </h3>
-            <div className="text-purple-100 space-y-2">
-              <p>🎂 You're officially an adult!</p>
-              <p>🗳️ You can vote now!</p>
-              <p>🚗 Time to get that license!</p>
-              <p>🎓 College adventures await!</p>
+            <div className="text-gray-600 font-[Inter] space-y-1">
+              <p>🎓 Mastered Accounting!</p>
+              <p>📊 Ready to lead!</p>
+              <p>💼 Career awaits!</p>
+              <p>🌟 Endless possibilities!</p>
             </div>
           </div>
         </div>
 
-        {/* Decorative divider */}
-        <div className="border-t border-purple-400 opacity-30 my-8"></div>
+        {/* Divider */}
+        <div className="border-t border-gray-200 my-6"></div>
 
-        {/* Birthday quote */}
-        <div className="text-center mb-8">
-          <blockquote className="text-xl md:text-2xl font-semibold text-yellow-200 italic">
-            "The more you praise and celebrate your life, the more there is in life to celebrate!"
-          </blockquote>
-        </div>
+        {/* Quote */}
+        <blockquote className="text-lg font-semibold text-pink-600 italic font-[Inter] mb-6">
+          “Your graduation is just the beginning of your incredible journey, Mar
+          Nat!”
+        </blockquote>
 
-        {/* Bottom section */}
-        <div className="text-center border-t border-purple-400 opacity-30 pt-8">
-          <div className="flex justify-center items-center space-x-4 mb-4">
-            <Sparkles className="text-yellow-300 animate-pulse" size={20} />
-            <span className="text-lg font-semibold">Made with Love for Your Special Day</span>
-            <Sparkles className="text-yellow-300 animate-pulse" size={20} />
-          </div>
-          
-          <p className="text-purple-200 text-sm">
-            © {currentYear} • A Special Birthday Website For Burte's • Created By Hami💕
+        {/* Dedication */}
+        <div className="flex justify-center items-center gap-3 mb-4">
+          <motion.div
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ duration: 2, repeat: Infinity }}
+          >
+            <Heart className="text-pink-500" size={20} fill="currentColor" />
+          </motion.div>
+          <p className="text-gray-600 font-[Inter]">
+            Made with love for Mar Nat’s graduation
           </p>
-          
-          {/* Floating emojis */}
-          <div className="flex justify-center space-x-4 mt-4 text-2xl">
-            <span className="animate-bounce">🎉</span>
-            <span className="animate-pulse">🎂</span>
-            <span className="animate-bounce" style={{ animationDelay: '0.5s' }}>🎈</span>
-            <span className="animate-pulse" style={{ animationDelay: '1s' }}>🎁</span>
-            <span className="animate-bounce" style={{ animationDelay: '1.5s' }}>✨</span>
-          </div>
+          <motion.div
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
+          >
+            <Heart className="text-pink-500" size={20} fill="currentColor" />
+          </motion.div>
         </div>
+
+        <p className="text-sm text-gray-500 font-[Inter]">
+          © {currentYear} • A Gift for Mar Nat’s Accounting Triumph
+        </p>
       </div>
 
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-4 -left-4 w-24 h-24 bg-pink-400 rounded-full opacity-10 animate-pulse"></div>
-        <div className="absolute top-1/2 -right-8 w-32 h-32 bg-purple-400 rounded-full opacity-10 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute -bottom-8 left-1/4 w-20 h-20 bg-yellow-400 rounded-full opacity-10 animate-pulse" style={{ animationDelay: '2s' }}></div>
+      {/* Subtle decorative element */}
+      <div className="absolute inset-0 pointer-events-none">
+        <motion.div
+          className="absolute bottom-4 right-4 text-pink-300 opacity-20"
+          animate={{ rotate: [0, 10, 0] }}
+          transition={{ duration: 3, repeat: Infinity }}
+        >
+          🎓
+        </motion.div>
       </div>
+
+      <style jsx>{`
+        @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;600&display=swap");
+        .bg-cream-50 {
+          background-color: #f4f4f4;
+        }
+        .text-pink-700 {
+          color: #c084fc;
+        }
+        .text-pink-500 {
+          color: #f8c8dc;
+        }
+        .text-gold-400 {
+          color: #ffd700;
+        }
+      `}</style>
     </footer>
   );
 };
 
 export default Footer;
-
