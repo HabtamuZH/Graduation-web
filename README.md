@@ -29,17 +29,9 @@ A heartfelt, interactive website created to celebrate Mar Nat’s Accounting deg
 4. Run: `npm run dev`
 5. Open `http://localhost:5173` in your browser.
 
-**Note**: If you encounter an `npm install` error due to `react-day-picker`, remove it from `package.json` (if unused) or downgrade `date-fns` to `^3.6.0`:
-
-````json
-"dependencies": {
-  "date-fns": "^3.6.0",
-  "react-day-picker": "8.10.1"
-}```
-
 ## 📁 Project Structure
 
-````
+```
 graduation-website/
 ├── dist/                    # Built production files
 ├── src/
@@ -59,7 +51,7 @@ graduation-website/
 ├── index.html              # Entry point with custom favicon
 ├── package.json            # Project dependencies
 └── README.md               # This file
-````
+```
 
 ## 🎵 Music Player Features
 
@@ -123,4 +115,3 @@ To customize the website:
 This website was created with love to honor Mar Nat’s incredible achievement in earning her Accounting degree. Congratulations, Mar Nat! 🎓💖
 
 Built with React ⚛️, Vite ⚡, TailwindCSS 🎨, Framer Motion 🎬, canvas-confetti 🎊, and Lucide React 🖼️ for a magical graduation celebration!
-````
